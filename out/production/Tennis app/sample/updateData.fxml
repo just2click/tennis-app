@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.updateDataController">
+    <top>
+        <AnchorPane prefHeight="101.0" prefWidth="520.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fx:id="bgImageView" blendMode="SRC_ATOP" fitHeight="424.0" fitWidth="576.0" layoutY="-304.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../Images/bgLOGIN.jpg" />
+                    </image>
+                </ImageView>
+                <Text fx:id="userName" fill="WHITE" layoutX="214.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                    <font>
+                        <Font name="System Bold" size="29.0" />
+                    </font>
+                </Text>
+            </children></AnchorPane>
+    </top>
+    <bottom>
+        <AnchorPane prefHeight="280.0" prefWidth="520.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="weightField" layoutX="169.0" layoutY="75.0" promptText="Weight in KG" />
+            <TextField fx:id="heightField" layoutX="169.0" layoutY="128.0" promptText="Height in Meters" />
+            <Button fx:id="confirmButton" layoutX="218.0" layoutY="211.0" mnemonicParsing="false" onAction="#confirmButtonOnAction" text="Confirm" />
+         </children>
+        </AnchorPane>
+    </bottom>
+</BorderPane>

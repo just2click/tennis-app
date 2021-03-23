@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.loginController">
+    <left>
+        <AnchorPane prefHeight="407.0" prefWidth="228.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fx:id="bgImageView" blendMode="SRC_ATOP" fitHeight="407.0" fitWidth="537.0" layoutX="-280.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../Images/bgLOGIN.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="userImageView" blendMode="SRC_ATOP" cache="true" cacheHint="SPEED" depthTest="ENABLE" fitHeight="109.0" fitWidth="121.0" layoutX="58.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../Images/student.png" />
+                    </image>
+                </ImageView>
+            </children></AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="400.0" prefWidth="332.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fx:id="lockImageView" fitHeight="42.0" fitWidth="66.0" layoutX="106.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../Images/lock.png" />
+                    </image>
+                </ImageView>
+                <TextField fx:id="enterUserIDField" layoutX="20.0" layoutY="168.0" prefHeight="25.0" prefWidth="235.0" promptText="User ID" />
+                <TextField fx:id="enterPasswordField" layoutX="19.0" layoutY="223.0" prefHeight="25.0" prefWidth="237.0" promptText="Password" />
+                <Text layoutX="18.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UserID:" wrappingWidth="69.92578125">
+                    <font>
+                        <Font name="Calibri Bold" size="15.0" />
+                    </font>
+                </Text>
+                <Text layoutX="20.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:">
+                    <font>
+                        <Font name="Calibri Bold" size="15.0" />
+                    </font>
+                </Text>
+                <Button fx:id="loginButton" layoutX="20.0" layoutY="293.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="25.0" prefWidth="236.0" text="Login" />
+                <Button fx:id="cancelButton" layoutX="19.0" layoutY="327.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="25.0" prefWidth="237.0" text="Cancel" />
+                <Text layoutX="89.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="      Login" textAlignment="CENTER">
+                    <font>
+                        <Font name="Calibri Bold Italic" size="20.0" />
+                    </font>
+                </Text>
+                <Text fx:id="loginMessage" fill="RED" layoutX="19.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invalid login. Please try again..." textAlignment="CENTER" wrappingWidth="236.92578125">
+                    <font>
+                        <Font name="Calibri Italic" size="15.0" />
+                    </font>
+                </Text>
+            </children></AnchorPane>
+    </right>
+</BorderPane>
